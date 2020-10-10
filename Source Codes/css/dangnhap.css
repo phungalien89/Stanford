@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login_panel{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    clear: both;
+    padding: 10px;
+    width: 99.999%;
+}
+
+.col-left{
+    float: left;
+    width: 80%;
+}
+
+.col-right{
+    float: left;
+    width: 20%;
+}
+
+.col-4{
+    width: 20%;
+    float: left;
+}
+.col-8{
+    width: 80%;
+    padding: 0px 5px;
+    float: left;
+}
+
+input{
+    width: 100%;
+    font-size: 1.5em;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:hover, input:focus{
+    box-shadow: 0px 0px 0px 3px dodgerblue;
+}
+
+.center-align{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5em;
+}
+
+button > img, button > div{
+    display: inline;
+    vertical-align: middle;
+}
+
+/* button{
+    background-color: transparent;
+    border: 3px ridge dodgerblue;
+    border-radius: 3px;
+    padding: 5px;
+}
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+} */
+
+.btn_login{
+    background-color: #008822;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    outline: none;
+}
+
+.btn_login:hover, .btn_login:focus{
+    background-color: #00bb00;
+    box-shadow: 0px 0px 0px 3px #008822;
+}
+.btn_cancel{
+    background-color: #bb0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    outline: none;
+}
+
+.btn_cancel:hover, .btn_cancel:focus{
+    background-color: #ee0000;
+    box-shadow: 0px 0px 0px 3px #bb0000;
+}
+
+.fas, .fa{
+    font-size: 1.5em;
+}
+

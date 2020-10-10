@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Store</title>
+</head>
+<style>
+    body{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    #bigTitle{
+        font-size: 3em;
+        color: firebrick;
+        text-align: center;
+        font-weight: bold;
+        padding: 30px 0px;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        justify-content: center;
+    }
+    #logo{
+        height: 200px;
+        position: absolute;
+    }
+    #panel{
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        border: 1px solid transparent;
+        right: -25%;
+        white-space: nowrap;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: ani_panel 15s linear 0s infinite;
+    }   
+    @keyframes ani_panel {
+        0%{right: -25%;}
+        100%{right: 100%;}
+    }
+
+    .left-col{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        float:left;
+    }
+    .right-col{
+        width: 85%;
+        border-left: 5px solid gray;
+        margin-left: 15%;
+        padding-left: 10px;
+    }
+    .title{
+        font-weight: bold;
+    }
+    .author{
+        font-weight: bold;
+    }
+    .price{
+        color: firebrick;
+        font-weight: bold;
+    }
+
+    td{
+        padding-top: 10px;
+    }
+
+    @media screen and (max-width: 640px){
+        .left-col, .right-col{
+            width: 100%;
+        }
+    }
+    
+</style>
+<body>
+    <div style="border: 1px solid transparent; height: 200px;">
+        <img id="logo" src="images/logo.jpg" alt="logo.jpg">
+        <div id="bigTitle">HỆ THỐNG SÁCH TRỰC TUYẾN</div>
+    </div>
+    <div style="position: relative; background-color: firebrick; color: white; height: 50px;">
+        <!-- <div id="panel">Xin chào các bạn đến với website booking online!</div> -->
+        <marquee style="position: absolute; top: 50%; transform: translateY(-50%); font-family: 'Arial';" 
+        behavior="sliding" scrollamount="7" direction="left">Xin chào các bạn đến với website booking online!</marquee>
+    </div>
+    
+    <div>
+        <div class="left-col">
+            <ul>
+                <li"><a href="">C# .NET</a></li>
+                <li><a href="">ASP .NET</a></li>
+                <li><a href="">Java</a></li>
+                <li><a href="">SilverLight</a></li>
+                <li><a href="">Ajax & JQuery</a></li>
+                <li><a href="">Linq, Entity, Framework</a></li>
+                <li><a href="">MVC Framework</a></li>
+                <li><a href="">Dotnetnuke, Joomla</a></li>
+                <li><a href="">Linux | Unix</a></li>
+                <li><a href="">SQL Server</a></li>
+                <li><a href="">Oracle</a></li>
+            </ul>
+        </div>
+        <div class="right-col">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/csharp1.jpg" alt="csharp1">
+                        <div>Name: <span class="title">COMPUTER PROGRAMMING WITH C#</span> </div>
+                        <div>Author: <span class="author">Kari Laithen</span> </div>
+                        <div>Price: <span class="price">49&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp2.jpg" alt="csharp2">
+                        <div>Name: <span class="title" style="text-transform: uppercase;">Microsoft Visual C# 2015 Unleashed</span> </div>
+                        <div>Author: <span class="author">Kelvin Hoffman</span> </div>
+                        <div>Price: <span class="price">45&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp3.jpg" alt="csharp3">
+                        <div>Name: <span class="title">C# ESSENTIALS</span> </div>
+                        <div>Author: <span class="author">Ben Albabari</span> </div>
+                        <div>Price: <span class="price">43&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp4.jpg" alt="csharp4">
+                        <div>Name: <span class="title" style="text-transform: uppercase;">Professional C# 3rd Edition</span> </div>
+                        <div>Author: <span class="author">Simon Robinson</span> </div>
+                        <div>Price: <span class="price">46&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp5.jpg" alt="csharp5">
+                        <div>Name: <span class="title">ACCELARATED C# 2010</span> </div>
+                        <div>Author: <span class="author">Trey Nash</span> </div>
+                        <div>Price: <span class="price">51&euro;</span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/csharp3.jpg" alt="csharp3">
+                        <div>Name: <span class="title">C# ESSENTIALS</span> </div>
+                        <div>Author: <span class="author">Ben Albabari</span> </div>
+                        <div>Price: <span class="price">43&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp5.jpg" alt="csharp5">
+                        <div>Name: <span class="title">ACCELARATED C# 2010</span> </div>
+                        <div>Author: <span class="author">Trey Nash</span> </div>
+                        <div>Price: <span class="price">51&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp2.jpg" alt="csharp2">
+                        <div>Name: <span class="title" style="text-transform: uppercase;">Microsoft Visual C# 2015 Unleashed</span> </div>
+                        <div>Author: <span class="author">Kelvin Hoffman</span> </div>
+                        <div>Price: <span class="price">45&euro;</span></div>
+                    </td>
+                    <td>
+                        <img src="images/csharp4.jpg" alt="csharp4">
+                        <div>Name: <span class="title" style="text-transform: uppercase;">Professional C# 3rd Edition</span> </div>
+                        <div>Author: <span class="author">Simon Robinson</span> </div>
+                        <div>Price: <span class="price">46&euro;</span></div>
+                    </td>
+                    
+                    <td>
+                        <img src="images/csharp1.jpg" alt="csharp1">
+                        <div>Name: <span class="title">COMPUTER PROGRAMMING WITH C#</span> </div>
+                        <div>Author: <span class="author">Kari Laithen</span> </div>
+                        <div>Price: <span class="price">49&euro;</span></div>
+                    </td>
+                    
+                    
+                </tr>
+               
+            </table>
+        </div>
+    </div>
+    <div style="text-align: center; padding-top: 20px;">
+        <div style="font-weight: bold; color: #009966; font-size: 1.5em;">Bản quyền thuộc công ty cổ phần Stanford - Đào tạo và phát triển công nghệ</div>
+        <div style="font-weight: bold;">
+            Số 20, Ngõ 678, Đường Láng, Đống Đa, Hà Nội
+        </div>
+    </div>
+</body>
+</html>

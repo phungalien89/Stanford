@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sửa thông tin người dùng</title>
+    <link rel="stylesheet" href="css/suaThongTinNguoiDung.css">
+    <script src="https://kit.fontawesome.com/bc8527f611.js"></script>
+</head>
+<body>
+    <div class="container">
+        <fieldset class="fieldset_container">
+            <!-- <legend>Nhập thông tin người dùng</legend> -->
+            <h2 style="text-align: center; text-transform: uppercase; margin-bottom: 0; color: white">Nhập thông tin người dùng</h2>
+            <div class="split-bar"></div>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-left">
+                        <label for="name">Tài khoản</label>
+                    </div>
+                    <div class="col-right">
+                        <input required type="text" placeholder="tên tài khoản">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="password">Mật khẩu</label>
+                    </div>
+                    <div class="col-right">
+                        <input required type="password" placeholder="mật khẩu">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="re-password">Nhập lại mật khẩu</label>
+                    </div>
+                    <div class="col-right">
+                        <input required type="password" placeholder="mật khẩu">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="fullname">Họ tên</label>
+                    </div>
+                    <div class="col-right">
+                        <input required type="text" placeholder="Họ và tên">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="sexual">Giới tính</label>
+                    </div>
+                    <div class="col-right">
+                        <input type="radio" checked name="sexual" id="rdMale">
+                        <label for="rdMale">Nam</label>
+                        <input type="radio" name="sexual" id="rdFemale">
+                        <label for="rdFemale">Nữ</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="phone">Điện thoại</label>
+                    </div>
+                    <div class="col-right">
+                        <input required type="tel" pattern="xxxx-xxx-xxx" placeholder="xxxx-xxx-xxx">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-right">
+                        <input required type="email" placeholder="email@email.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-left">
+                        <label for="address">Địa chỉ</label>
+                    </div>
+                    <div class="col-right">
+                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="center-align">
+                        <button class="btn_update">
+                            <span class="fas fa-check-square"></span>
+                            <!-- <img src="images/Update.png" alt="Update"> -->
+                            <div>Cập nhật</div>
+                        </button>
+                        <button class="btn_cancel">
+                            <span class="fa fa-close"></span>
+                            <!-- <img src="images/cancel.gif" alt="cancel"> -->
+                            <div>Hủy bỏ</div>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

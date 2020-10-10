@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập hệ thống</title>
+    <link rel="stylesheet" href="css/dangnhap.css">
+    <script src="https://kit.fontawesome.com/bc8527f611.js"></script>
+</head>
+<body>
+    <div class="login_panel">
+        <fieldset style="line-height: 2em; border: 1px solid dodgerblue; border-radius: 10px; box-shadow: 2px 2px 4px gray;">
+            <legend>Thông tin đăng nhập</legend>
+            <form class="form-control" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-left">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="name">Tài khoản</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" name="name" id="name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="password">Mật khẩu</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="password" name="password" id="password">
+                            </div>
+                        </div>
+                        <div class="row center-align" style="padding-top: 20px;">
+                            <button class="btn_login">
+                                <!-- <img src="images/right_16.png" alt="right_16">  -->
+                                <span class="fas fa-sign-in-alt"></span>
+                                <div>Đăng nhập</div>
+                            </button>
+                            <button class="btn_cancel">
+                                <!-- <img src="images/cancel.gif" alt="cancel"> -->
+                                <span class="fa fa-close"></span>
+                                <div>Hủy bỏ</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <img src="images/login_icon.png" alt="login_icon">
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

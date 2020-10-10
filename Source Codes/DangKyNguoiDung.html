@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head> 
+<body>
+    <ul class="nav">
+        <li><a href="LamViecVoiCSS.html" target="_self">Trang chủ</a></li>
+        <li><a href="GioiThieu.html" target="_self">Giới thiệu</a></li>
+        <li><a href="LamViecVoiHTMLtrongPHP.html" target="_self">Khóa học</a></li>
+        <li><a href="#" target="_self">Tin tức</a></li>
+        <li><a class="active" href="DangKyNguoiDung.html" target="_self">Đăng ký</a></li>
+        <li><a href="#" target="_self">Liên hệ</a></li>
+    </ul>
+    <br>
+    <fieldset>
+        <legend>Nhập thông tin đăng ký</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Tên đăng nhập</td>
+                    <td>
+                        <input type="text" name="name" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                        <input type="password" name="password" id="password" required>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Họ tên:</td>
+                    <td>
+                        <input type="text" name="fullname" id="fullname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="sexual" id="male" value="male" checked>
+                        <label for="male">Nam</label>
+                        <input type="radio" name="sexual" id="female" value="female">
+                        <label for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td>
+                        <input type="tel" name="mobile" id="mobile">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="notify" id="notify" value="notify">
+                        <label for="notify">Nhận thông báo khi có tin mới</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <textarea name="address" id="address" cols="30" rows="10" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Đăng nhập"> &nbsp;
+                        <input type="button" value="Hủy bỏ">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <h2>Nhúng vào iframe</h2>
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/J0zRnx2ODOY?controls=0&autoplay=1"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</body>
+</html>

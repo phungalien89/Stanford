@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th, td{
+    border-right: 1px solid gray;
+}
+
+th{
+    background-color: limegreen;
+    color: white;
+    font-weight: bold;
+}
+
+th, td{
+    padding: 10px 15px;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: #aaa;
+}
+
+tr:hover{
+    background-color: #333;
+    color: white;
+}
+
+td > button{
+    background-color: transparent;
+    border: none;
+    border-radius: 20%;
+}
+
+td > button:hover{
+    background-color: #fff;
+    border: 1px sollid gray;
+}

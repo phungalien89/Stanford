@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3 - Di chuyển đến 01 link khi click vào 01 phân vùng trên ảnh</title>
+</head>
+<style>
+    #bigTitle{
+        font-size: 3em;
+        text-align: center;
+        color: #009955;
+    }
+</style>
+<body>
+    <h1 id="bigTitle">Bài tập 3 - Nhấn vào 01 phân vùng trên ảnh để đến trang đích</h1>
+    <header>
+        <a href="https://stanford.com.vn/dao-tao/chuong-trinh-uu-dai" target="_blank">
+            <img title="Nhấn để xem các chương trình ưu đãi của Stanford" usemap="#map1" src="images/Merry-Chirstmas-stanford.com.vn.gif" alt="Merry-Chirstmas-stanford" style="margin-left: 50%; transform: translateX(-50%);">
+        </a>
+        <map name="map1">
+            <area title="Giới thiệu về Stanford" shape="rect" coords="0, 0, 150, 42" href="https://stanford.com.vn/gioi-thieu" alt="gioi-thieu" target="_blank">
+            <area title="Đăng ký học ở đây" shape="rect" coords="280, 140, 393, 173" href="https://stanford.com.vn/dang-ky" alt="dang-ky" target="_blank">
+        </map>
+    </header>
+</body>
+</html>

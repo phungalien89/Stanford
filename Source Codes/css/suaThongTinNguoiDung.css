@@ -1,0 +1,164 @@
+:root{
+    --borderEffect: 4px solid dodgerblue;
+}
+
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2f323a;
+}
+
+.fieldset_container{
+    line-height: 3em;
+    border: none;
+    box-shadow: 2px 2px 5px 3px gray;
+    border-radius: 5px;
+}
+
+.split-bar{
+    background-color: dodgerblue;
+    height: 3px;
+    border-radius: 1.5px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.col-left{
+    width: 30%;
+    float: left;
+    padding: 0px 5px;
+}
+
+.col-right{
+    width: 70%;
+    float: left;
+    padding: 0px 5px;
+}
+
+.row{
+    clear: both;
+    width: 100%;
+}
+
+input:not([type='radio']){
+    width: 100%;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border-width: 3px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+input:not([type='radio']):focus, textarea:focus{
+    /* border: 5px ridge dodgerblue; */
+    outline: none;
+    box-shadow: 0px 0px 0px 3px dodgerblue;
+}
+
+input:not([type='radio']):hover, textarea:hover{
+    /* border: var(--borderEffect); */
+    box-shadow: 0px 0px 0px 3px dodgerblue;
+}
+
+input[type='radio']{
+    background-color: red;
+}
+
+textarea{
+    border-width: 3px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image{
+    display: inline;
+}
+
+.center-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn_update{
+    background-color: #008822;
+    padding: 5px 10px;
+    color: white;
+    display: flex;
+    align-items: stretch;
+    column-gap: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn_update:hover, .btn_update:focus{
+    background-color: #00bb22;
+    box-shadow: 0px 0px 0px 3px #008822;
+}
+.btn_cancel{
+    background-color: #880000;
+    padding: 5px 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn_cancel:hover, .btn_cancel:focus{
+    background-color: #bb0000;
+    box-shadow: 0px 0px 0px 3px #880000;
+}
+
+.fas, .fa{
+    font-size: 1.5em;
+
+}
+
+@media screen and (max-width: 640px){
+    .container, .col-left, .col-right{
+        width: 100%;
+    }
+
+    .fieldset_container{
+        line-height: 2em;
+    }
+
+    .center-align{
+        flex-direction: column;
+        width: 35%;
+        row-gap: 10px;
+    }
+
+    input{
+        padding: 10px 0px;
+    }
+
+    button{
+        justify-content: center;
+    }
+
+    button > div{
+        padding: 8px 0px;
+    }
+}
